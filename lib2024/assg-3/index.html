@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3 - HTML forms</title>
+</head>
+<body>
+	<header id="header">
+		<h1>Assignment 3</h1>
+		
+	</header>
+	<div id="wrapper" class="wrapper">
+		<section id="html-forms" class="main-section">
+			
+			<form action="somepage.php" method="get">
+				<div id="fn-container" class="form-elm">
+					<label for="FirstName">First name:</label>
+					<input type="text" name="FirstName" id="FirstName" placeholder="First name goes here">
+				</div>
+
+				<div id="ln-container" class="form-elm">
+					<label for="LastName">Last Name:</label>
+					<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here">
+				</div>
+
+				<div id="email-container" class="form-elm">
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" value="example@g.com" readonly>
+				</div>
+
+				<div id="pass-container" class="form-elm">
+					<label for="pass">Password:</label>
+					<input type="password" name="pass" id="pass" required>
+				</div>
+
+				<div id="it-container" class="form-elm">
+					<label for="IntroductoryText">Introductory Text:</label>
+					<textarea name="IntroductoryText" id="IntroductoryText" placeholder="Enter Introduction Text here">
+						This is the value of text area
+					</textarea>
+				</div>
+
+				<div id="st-container" class="form-elm">
+
+					<label for="dte">Date of Birth:</label>
+					<input type="date" name="dte" id="dte"><br>
+
+				</div>
+
+				<label for="phone">Mobile number:</label>
+				<input type="tel" id="phone" name="phone" placeholder="613-555-0123" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+				<div id="radio-container" class="form-elm">
+					<p>Gender:</p>
+					<label for="Female">
+						<input type="radio" name="like-form" id="Female" value="Female">
+						Female
+					</label>
+					<label>
+						<input type="radio" name="like-form" id="Male" value="Male">
+						Male
+					</label>
+					<label>
+						<input type="radio" name="like-form" id="RatherNotSpecify" value="RatherNotSpecify">
+						Rather Not Specify
+					</label>
+				</div>
+
+				<div id="addr-container" class="form-elm">
+					<label for="Address">Address:</label>
+					<input type="text" name="Address" id="Address" placeholder="221B Baker Street">
+				</div>
+
+				<div id="city-container" class="form-elm">
+					<label for="City">City:</label>
+					<input type="text" name="City" id="City" placeholder="Ottawa">
+				</div>
+
+				<div id="og-contianer" class="form-elm">
+					<label for="Province">Province:</label>
+					<select id="Province" name="Province">
+						<optgroup label="Province">
+							<option value="On">Ontario</option>
+							<option value="Qc">Quebec</option>
+							<option value="Mb">Manitoba</option>
+							<option value="Ns">Nova Scotia</option>
+							<option value="Nb">New Brunswick</option>
+						</optgroup>
+						<optgroup label="Territories">
+							<option value="Nt">Nunavut</option>
+							<option value="Yt">Yukon</option>
+						</optgroup>
+					</select>
+				</div>
+
+				<div id="coun-contianer" class="form-elm">
+					<label for="Country">Country:</label>
+					<select id="Country" name="Country">
+						<optgroup label="Country">
+							<option value="Ca">Canada</option>
+							<option value="Us">United States</option>
+							<option value="Mx">Mexico</option>
+							<option value="It">Italy</option>
+							<option value="Uk">United Kingdom</option>
+						</optgroup>
+					</select>
+				</div>
+
+				<div id="post-container" class="form-elm">
+					<label for="PostalCode">Postal Code:</label>
+					<input type="text" name="PostalCode" id="PostalCode" placeholder="K2C-2T8">
+				</div>
+
+				<fieldset>
+					<legend>Hobbies/Interests:</legend>
+					<div>
+						<label for="read">
+							Reading:
+							<input type="checkbox" name="read" id="read">
+						</label> <br>
+
+						<label for="videogames">
+							Video Games
+							<input type="checkbox" name="videogames" id="videogames">
+						</label><br>
+
+						<label for="painting">
+							Painting
+							<input type="checkbox" name="painting" id="painting">
+						</label><br>
+
+						<label for="hiking">
+							Hiking
+							<input type="checkbox" name="hiking" id="hiking">
+						</label><br>
+
+						<label for="other">
+							Other
+							<input type="checkbox" name="other" id="other">
+						</label>
+					</div>
+				</fieldset>
+
+				<div id="t-container" class="form-elm">
+					<label for="ur">Website:</label>
+					<input type="url" name="ur" id="ur" ><br>
+				</div>
+
+				<button type="submit">Submit</button>
+				<!-- button typ="reset" resets the form values, without needing to refresh the page -->
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
