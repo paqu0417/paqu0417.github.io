@@ -15,21 +15,25 @@
 				<div id="fn-container" class="form-elm">
 					<label for="FirstName">First name:</label>
 					<input type="text" name="FirstName" id="FirstName" placeholder="First name goes here">
+					<!--first name heading and entry field-->
 				</div>
 
 				<div id="ln-container" class="form-elm">
 					<label for="LastName">Last Name:</label>
 					<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here">
+					<!--last name heading and entry field-->
 				</div>
 
 				<div id="email-container" class="form-elm">
 					<label for="email">Email:</label>
 					<input type="email" name="email" id="email" value="example@g.com" readonly>
+					<!--email heading and entry field-->
 				</div>
 
 				<div id="pass-container" class="form-elm">
 					<label for="pass">Password:</label>
 					<input type="password" name="pass" id="pass" required>
+					<!--password heading and entry field. Including required and hidden characters-->
 				</div>
 
 				<div id="it-container" class="form-elm">
@@ -37,17 +41,21 @@
 					<textarea name="IntroductoryText" id="IntroductoryText" placeholder="Enter Introduction Text here">
 						This is the value of text area
 					</textarea>
+					<!--text area heading and entry field, with large text entry.-->
 				</div>
 
 				<div id="st-container" class="form-elm">
-
 					<label for="dte">Date of Birth:</label>
 					<input type="date" name="dte" id="dte"><br>
-
+					<!--date of birth heading and entry field, with date selector-->
 				</div>
 
-				<label for="phone">Mobile number:</label>
-				<input type="tel" id="phone" name="phone" placeholder="613-555-0123" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+				<div id="st-container" class="form-elm">
+					<label for="phone">Mobile number:</label>
+					<input type="tel" id="phone" name="phone" placeholder="613-555-0123" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+					<!--phone number heading and entry field, with placeholder and value pattern-->
+				</div>
 
 				<div id="radio-container" class="form-elm">
 					<p>Gender:</p>
@@ -63,16 +71,19 @@
 						<input type="radio" name="like-form" id="RatherNotSpecify" value="RatherNotSpecify">
 						Rather Not Specify
 					</label>
+					<!--gender heading and entry field, with radio-->
 				</div>
 
 				<div id="addr-container" class="form-elm">
 					<label for="Address">Address:</label>
 					<input type="text" name="Address" id="Address" placeholder="221B Baker Street">
+					<!--address heading and entry field, with placeholder-->
 				</div>
 
 				<div id="city-container" class="form-elm">
 					<label for="City">City:</label>
 					<input type="text" name="City" id="City" placeholder="Ottawa">
+					<!--city heading and entry field, with placeholder-->
 				</div>
 
 				<div id="og-contianer" class="form-elm">
@@ -90,6 +101,7 @@
 							<option value="Yt">Yukon</option>
 						</optgroup>
 					</select>
+					<!--province heading and entry field, with drop-down options-->
 				</div>
 
 				<div id="coun-contianer" class="form-elm">
@@ -103,11 +115,13 @@
 							<option value="Uk">United Kingdom</option>
 						</optgroup>
 					</select>
+					<!--country heading and entry field, with drop-down options-->
 				</div>
 
 				<div id="post-container" class="form-elm">
 					<label for="PostalCode">Postal Code:</label>
 					<input type="text" name="PostalCode" id="PostalCode" placeholder="K2C-2T8">
+					<!--postal code heading and entry field, with placeholder-->
 				</div>
 
 				<fieldset>
@@ -138,11 +152,13 @@
 							<input type="checkbox" name="other" id="other">
 						</label>
 					</div>
+					<!--hobbies heading and entry field, with check boxes-->
 				</fieldset>
 
 				<div id="t-container" class="form-elm">
 					<label for="ur">Website:</label>
 					<input type="url" name="ur" id="ur" ><br>
+					<!--url heading and entry field-->
 				</div>
 
 				<button type="submit">Submit</button>
