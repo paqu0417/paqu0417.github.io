@@ -116,7 +116,8 @@
 			<p style="color:red;">
 				<strong>Ans: </strong>
 				The odd tag out is &lt;b&gt; because it deals with bolding text while the others have to do with creating tables.
-		</p></li>
+			</p>
+		</li>
 
 		<!-- Qus 9 -->
 		<li>
@@ -131,7 +132,7 @@
 						<option value="blue">Blue</option>
 						<!-- selected attribute makes an option selected by default -->
 						<option value="green" selected>Green</option>
-					</select>
+				</select>
 				</div>
 
 		</li>
@@ -197,6 +198,117 @@
 
 			</p>
 		</li>
+		<!-- Qus 13 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px.  
+			</p>
+			<p style="color:red;">
+				<strong>Ans: </strong>
+			</p>
+		<div style="position: absolute; left: 50%;">
+		   <div style="position: relative; left: -50%; width:200px; height:200px">
+		     I am a centered element! 
+		   </div>
+		</div>
+
+		</li>
+		<br><br>
+
+
+
+		<!-- Qus 14 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				Create CSS keyframes block called "spin" that rotates an element.   
+			</p>
+			<p style="color:red;">
+				<strong>Ans: </strong>
+			</p>
+			
+			<style type="text/css", class="spin", id="test">
+				p.test {
+  					width: 100px;
+  					height: 100px;
+  					background-color: #0CB1C4;
+ 					animation-name: spin;
+  					animation-duration: 5000ms;
+  					animation-iteration-count: infinite;
+  					animation-timing-function: linear; 
+  				}
+  			
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+				
+				@keyframes spin {
+			/*from sets the start of the property in an animation*/
+					from {
+						transform: rotate(0deg);
+					}
+			/*to sets the ending of the property in an animation*/
+					to {
+						transform: rotate(360deg);
+					}
+				}
+			</style>
+			<p class="test" id="test">
+			spin me
+			</p> 
+		</li>
+
+
+		<!-- Qus 15 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>Create CSS animation block to rotate an element that has the following properties
+			</p>
+			<p style="color:red;">
+				<strong>Ans: </strong>
+			</p>
+			<style type="text/css", class="rotate-me", id="rotate-me">
+				p.rotate-me {
+  					width: 100px;
+  					height: 100px;
+  					background-color: #0CB1C4;
+ 					animation-name: spin;
+  					animation-duration: 500ms;
+  					animation-iteration-count: 5;
+  					animation-timing-function: linear; 
+  				}
+
+
+			@keyframes spin {
+			/*from sets the start of the property in an animation*/
+					from {
+						transform: rotate(0deg);
+					}
+			/*to sets the ending of the property in an animation*/
+					to {
+						transform: rotate(360deg);
+					}
+				}
+			</style>
+			<p class="rotate-me" id="rotate-me">
+			
+			</p>
+		</li>
+
+		<!-- Qus 16 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>How would you include create an alert with string "I love JavaScript" using JavaScript?
+			</p>
+			<p style="color:red;">
+				<strong>Ans: </strong>
+			</p>
+			
+			<a  onclick="alert('I Love JavaScript')">CLICK ME</a>
+		</li>
+
   </ol>
 </body>
 </html>

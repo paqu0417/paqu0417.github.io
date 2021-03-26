@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 4</title>
+	<!--link to CSS document-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		h1 {
+			color: black;
+			text-align: center;
+			font-weight: bold;
+			font-size:45px;
+			margin: 15px;
+		}
+		h2 {
+			color: black;
+			text-align: left;
+			font-weight: bold;
+			font-size:30px;
+			margin: 15px;
+		}
+		h3 {
+			color: black;
+			text-align: left;
+			font-weight: bold;
+			font-size:20px;
+			margin: 15px;
+		}
+		h4 {
+			color: black;
+			text-align: left;
+			font-weight: bold;
+			font-size:20px;
+			margin: 15px;
+		}
+		p {
+			color: #111111;
+			font-size: 50px;
+			margin: 15px;
+		}
+	</style>
+</head>
+
+<body style="background-image: url('img/brick_wall.png');">
+	<div id="container" class="container">
+		<!-- header start -->
+		<header style="display:flex; background-color:#6db068" class="site-header">
+			<img src="img/logo.png" class="logo" alt="website logo">
+			<h1>Title of Page</h1>
+
+			<nav class="main-nav-container desktop-nav">
+				<ul class="main-nav clearfix" style="display: flex; margin: 0 auto;">
+					<li>
+						<a>Home</a>
+					</li>
+
+					<li>
+						<a>About</a>
+					</li>
+
+					<li>
+						<a>Contact</a>
+					</li>
+					<li>
+						<a>Work</a>
+					</li>
+				</ul>
+			</nav>			
+		</header>
+				
+		<main id="main" class="main">
+			<!-- any styles applied to the parent element will be inhereited by the children -->
+			<!-- This can be overwritten by adding the same property in the child element -->
+			<section  class="content">
+				<!--Aside/sidebar content start-->
+				<aside class="col-main site-sidebar">
+					
+					<img src="img/gallery-img-1.jpg" alt="photo" style="width:265px">
+					<h4>Title of the sidebar</h4>
+					<nav class="sidebar-nav-container">
+						<p style="font-size:18px;">Apple pie carrot cake apple pie lollipop chocolate lollipop. Gummi bears sweet roll pastry cookie donut danish pudding sweet roll brownie.</p>
+					</nav>
+				</aside>
+			</section>
+
+			<section class="content">
+				<!--Main content text start -->
+				<h2> Main Content Title </h2>
+
+				<p style="font-size:18px;">
+					Souffle bonbon sweet roll. Tootsie roll chocolate gunnies toffee topping jelly donut. Apple pie carrot cake apple pie lollipop chocolate lollipop. Gummi bears sweet roll pastry cookie donut danish pudding sweet roll brownie. Fruitcake sweet roll pie liquorice danish sesame snaps dessert jelly beans. Pie topping cupcake caramels. Gingerbread gummies sugar plum powder biscuit jelly-o pastry lemon drops cookie. Dessert macaroon jelly beans tart cake cottom candy bonbon donut. Wafer cupcake topping jelly jelly-o bonbon cake. Candy canes jelly-o danish brownie biscuit muffin caramels. Marshmallow powder chocolate bar liquorice tiramisu. Biscuit souffle sweet donut candy canes brownie tart muffin.
+				</p>
+				
+				<p style="font-size:18px;">
+					Souffle bonbon sweet roll. Tootsie roll chocolate gunnies toffee topping jelly donut. Apple pie carrot cake apple pie lollipop chocolate lollipop. Gummi bears sweet roll pastry cookie donut danish pudding sweet roll brownie. Fruitcake sweet roll pie liquorice danish sesame snaps dessert jelly beans. Pie topping cupcake caramels. Gingerbread gummies sugar plum powder biscuit jelly-o pastry lemon drops cookie. Dessert macaroon jelly beans tart cake cottom candy bonbon donut. Wafer cupcake topping jelly jelly-o bonbon cake. Candy canes jelly-o danish brownie biscuit muffin caramels. Marshmallow powder chocolate bar liquorice tiramisu. Biscuit souffle sweet donut candy canes brownie tart muffin.
+				</p>
+			</section>
+
+			<h3>Secondary Content Title</h3> 
+			<section style="display:flex; text-align:center; float: right; margin-right: 200px;" class="secondary"> 
+				<figure>
+					<img src="img/gallery-img-1.jpg" alt="photo" style="width:200px;" >
+					<figcaption>Image 1</figcaption>
+				</figure>
+				<figure>
+					<img src="img/gallery-img-1.jpg" alt="photo" style="width:200px;" >
+					<figcaption>Image 2</figcaption>
+				</figure>
+				<figure>
+					<img src="img/gallery-img-1.jpg" alt="photo" style="width:200px;" >
+					<figcaption>Image 3</figcaption>
+				</figure>
+			</section>		
+		</main>
+	</div>
+
+	<footer style=" display:flex; background-color:#6db068" class="footer" id="footer">
+	<!--footer section begins-->
+		<p style="font-size:14px;">
+			CopyRight 2017, All Rights reserved
+		</p>
+		<section class="secondary" style=" display:flex; margin-left:800px; float: right">
+			<a href="https://facebook.com">
+				<img src="img/facebook.png" alt="photo" style="width:45px; margin: 10px" >
+			</a>
+			<a href="https://youtube.com">
+				<img src="img/youtube.png" alt="photo" style="width:45px; margin: 10px" >
+			</a>
+			<a href="https://twitter.com">
+				<img src="img/twitter.png" alt="photo" style="width:45px; margin: 10px" >
+			</a>
+		</section>
+	</footer>
+</body>
+</html>
