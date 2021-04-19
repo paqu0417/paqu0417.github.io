@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>Final</title>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/scripts.js">
+		
+	</script>
+</head>
+<body style="background-image: url('img/background.png');">
+	<header class=header>
+		<div class="logo">My Logo</div>
+		<br>
+		<nav class="main-nav-container desktop-nav">
+			<ul class="main-nav clearfix">
+				<li>
+					<p>Home</p>
+				</li>
+				<li>
+					<p>About</p>
+				</li>
+				<li>
+					<p>Schedule</p>
+				</li>
+				<li>
+					<p>Portfolio</p>
+				</li>
+				<li>
+					<p>Contact</p>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main-container desktop-nav">
+		<article style="display: flex;">
+			
+			<section class="about">
+				<h2>About</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Morbi tristique senectus et netus et malesuada. Nisi quis eleifend quam adipiscing.</p>
+			</section>
+			<section>
+				<aside class="col-main site-sidebar">
+					<img src="img/bridge.jpg" alt=bridgePhoto style="width: 100%;">
+				</aside>
+			</section>
+		</article>
+	</main>
+	<main class="main-container desktop-nav">
+		<div>
+			<h2>Schedule</h2>
+			<table class="schedtable">
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Monday</th>
+						<th>Tuesday</th>
+						<th>Wednesday</th>
+						<th>Thursday</th>
+						<th>Friday</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>09:00-11:00</th>
+						<th>Commmunications I</th>
+						<th>Client Services</th>
+						<th>Special Collections</th>
+						<th>Directed Research Seminar</th>
+						<th>Client Services</th>
+					</tr>
+					<tr>
+						<th>11:00-12:30</th>
+						<th>Reference</th>
+						<th>Internet App</th>
+						<th>Library Software</th>
+						<th>French</th>
+						<th>Reference</th>
+					</tr>
+					<tr>
+						<th>14:00-15:00</th>
+						<th>Acquisitions</th>
+						<th>General Elective</th>
+						<th>Marketing</th>
+						<th>Emerging Library Tech</th>
+						<th>Library Software</th>
+					</tr>
+					<tr>
+						<th>15:30-17:30</th>
+						<th>French</th>
+						<th>French</th>
+						<th>Acquisitions</th>
+						<th>Subject Analysis</th>
+						<th>Internet App</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</main>
+	<main class="main-container desktop-nav">
+		<article style="display:inline-flex; justify-content: space-between; width:100%;">
+			<section>
+				<div id="profile">
+					<h2>Edit Profile</h2>
+					<form>
+						<table class="formtable">
+							<tbody>
+								<tr>
+									<th id="name-container" class="form-elm">
+										<label for="Name">Name:	</label>
+									</th>
+									<th>
+										<input type="text" name="Name" id="nameInput">
+									</th>
+								</tr>
+								<tr>
+									<th id="email-container" class="form-elm">
+										<label for="Email">Email:	</label>
+									</th>
+									<th>
+										<input type="email" name="Email" id="emailInput">
+									</th>
+								</tr>
+								<tr>
+									<th id="Address-container" class="form-elm">
+										<label for="Address">Address:	</label>
+									</th>
+									<th>
+										<input type="text" name="Address" id="addressInput">
+									</th>
+								</tr>
+								<tr>
+									<th id="city-container" class="form-elm">
+										<label for="City">City:	</label>
+									</th>
+									<th>
+										<input type="text" name="City" id="cityInput">
+									</th>
+								</tr>
+								<tr>
+									<th id="province-container" class="form-elm">
+										<label for="Province">Province:	</label>
+									</th>
+									<th>
+										<select name="Province" id="provinceInput">
+											<option value="none" selected disabled hidden>Select Province</option>
+											<option value="AB">Alberta</option>
+											<option value="BC">British Colombia</option>
+											<option value="MB">Manitoba</option>
+											<option value="NB">New Brunswick</option>
+											<option value="NL">Newfoundland and Labrador</option>
+											<option value="NT">Northwest Territories</option>
+											<option value="NS">Nova Scotia</option>
+											<option value="NU">Nunavut</option>
+											<option value="ON">Ontario</option>
+											<option value="PE">Prince Edward Island</option>
+											<option value="QC">Quebec</option>
+											<option value="SK">Saskatchewan</option>
+											<option value="YT">Yukon</option>
+										</select>
+									</th>
+								</tr>
+								<tr>
+									<th id="pc-container" class="form-elm">
+										<label for="PC">Postal Code:	</label>
+									</th>
+									<th>
+										<input type="text" name="PC" id="pcInput" pattern="[A-Z]{1}-[0-9]{1}-[A-Z]{1}-[0-9]{1}-[A-Z]{1}-[0-9]{1}">
+									</th>
+								</tr>
+								<tr>
+									<th></th>
+									<th>
+										<div id="button-container" class="form-button">
+											<button type='button' onclick="submitForm()">Submit</button>
+										</div>
+									</th>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+			</section>
+			<section>
+				<aside class="main-col site-sidebar">
+					<div>
+						<h2>Profile Info</h2>
+						<div class=profile-card id="profile-card">
+							<img src="img/pp.jpg" alt=profilePicture style="border-radius: 50%; width:25%;">
+							<h3 id="profilename1">John Doe</h3>
+							<p id="profileemail">JohnDoe@algonquincollege.com</p>
+							<p id="profileaddr">1385 Woodroffe Ave, Nepean, <br> ON, K2G 1V8</p>
+							<i class="fa fa-envelope"></i>
+						</div>
+					</div>
+				</aside>
+			</section>
+		</article>
+	</main>
+	<footer class="footer" id="footer">
+		
+		<table class="footTable">
+			<thead>
+				<tr>
+					<th>Quick Links</th>
+					<th>Follow us</th>
+					<th>Address</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>
+					<nav class="foot-nav" id="foot-nav">
+						<div>
+							<ul>
+								<li>
+									<p> Schedule </p>
+								</li>
+								<li>
+									<p> About </p>
+								</li>
+								<li>
+									<p> Portfolio </p>
+								</li>
+								<li>
+									<p> Contact </p>
+								</li>
+							</ul>
+						</div>
+						<div>
+						</div>
+					</nav>
+				</th>
+			
+				<th>
+					<section class="secondary" style=" display:flex;">
+						<a href="https://facebook.com">
+							<img src="img/facebook.png" alt="photo" style="width:75%; margin: 10px" >
+						</a>
+						<a href="https://youtube.com">
+							<img src="img/youtube.png" alt="photo" style="width:75%; margin: 10px" >
+						</a>
+						<a href="https://twitter.com">
+							<img src="img/twitter.png" alt="photo" style="width:75%; margin: 10px" >
+						</a>
+					</section>
+				</th>
+			
+				<th>
+
+					<p>1385 Woodroffe Ave,</p>
+					<p>Nepean, ON, K2G 1V8 </p>
+				 	<p>Canada</p>
+				</th>
+			</tr>
+		</table>
+	</footer>
+</body>
+</html>

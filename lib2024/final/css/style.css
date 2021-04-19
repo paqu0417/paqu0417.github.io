@@ -1,0 +1,136 @@
+.desktop-nav {
+	width: 90%;
+	margin: 5%;
+	
+	/*max width is used in fluid layout to restrict the width of elements that are set to 100% width*/
+	/*This is to make sure the content remains in the readable area for screen sizes that are larger than a tablet*/
+	max-width: 90%;
+}
+
+.logo {
+	font-family: 'Karantina', cursive;
+	float: left;
+	padding-left: 8%;
+	color: #0099a9;
+	font-weight: bold;
+	font-size: 36px;
+
+	/*box-sizing border box makes the width adjust according to padding*/
+}
+
+p, h2, h3, h4, table{
+	font-family: 'myAcherus';
+}
+
+
+
+i, h2,h3 {
+	color:#0099a9;
+}
+
+.site-sidebar {
+	padding: 5%;
+	width: 100%;
+	box-sizing: border-box;
+	float: right;
+	margin-left: 50%;
+
+}
+
+.formtable{
+	text-align: left;	
+}
+
+.formtable input, button, select{
+	float: right;
+	margin: 3%;
+}
+
+.form-button{
+	float: right;
+}
+
+.schedtable{
+	margin:0 auto;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+
+.schedtable tr:nth-child(odd) {background-color: #f2f2f2;}
+
+.schedtable th {
+	padding: 1%;
+    border: 2px solid black;
+
+}
+.schedtable th{
+	text-align: center;
+}
+.schedtable thead{
+	color: #0099a9;
+	background-color: #ffffff;
+}
+
+.header{
+}
+
+.main-nav-container{
+	background-color: #0099a9;
+}
+
+.main-nav li{
+	display: inline-flex;
+	box-sizing: border-box;
+	width: 10%;
+}
+
+.profile-card{
+	border: 1px;
+	box-shadow: 3px 3px 3px 3px grey;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.footer{
+	background-color: #222222;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer p, a, h4{
+	color: #ffffff;
+}
+
+.foot-nav li{
+	display: flex;
+	margin-left: 40%;
+}
+
+.footTable{
+	table-layout: fixed;
+	color:#ffffff;
+	width: 100%;
+	margin: 2%;
+}
+
+.secondary{
+	margin-left:35%;
+}
+
+.loader{
+	width: 10%;
+	animation: 
+		spin 2s infinite
+}
+
+@keyframes spin {
+	/*from sets the start of the property in an animation*/
+	from {
+		transform: rotate(0deg);
+	}
+	/*to sets the ending of the property in an animation*/
+	to {
+		transform: rotate(360deg);
+	}
+}
